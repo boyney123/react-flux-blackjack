@@ -4,11 +4,11 @@ var EventEmitter = require('events').EventEmitter;
 var assign = require('object-assign');
 
 var ActionTypes = CardConstants.ActionTypes;
-var CHANGE_EVENT = 'change';
+const CHANGE_EVENT = 'change';
 
 var users = {};
 
-DealCard = function(userId){
+function DealCard(userId){
 
     users[userId] = users[userId] || {};
 
